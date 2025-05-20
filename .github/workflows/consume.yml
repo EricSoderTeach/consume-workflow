@@ -1,0 +1,6 @@
+name: Consume workflow
+on:
+  workflow_dispatch:
+jobs:
+  consume_workflow:
+    uses: EricSoderTeach/ActionsTest/.github/workflows/matrix.yml@main
