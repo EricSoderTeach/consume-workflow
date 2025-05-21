@@ -4,3 +4,11 @@ on:
 jobs:
   consume_workflow:
     uses: EricSoderTeach/ActionsTest/.github/workflows/matrix.yml@main
+  
+  consume_action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Consume action
+        uses: EricSoderTeach/hello-world-javascript-action@v1
+        with:
+          who-to-greet: 'EricSoderTeach'
